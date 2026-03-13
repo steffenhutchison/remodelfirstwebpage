@@ -2,14 +2,12 @@ interface CtaBandProps {
   headline: string;
   supportingText?: string;
   primaryLabel?: string;
-  secondaryLabel?: string;
 }
 
 export default function CtaBand({
   headline,
   supportingText,
   primaryLabel = "Book a Demo",
-  secondaryLabel = "Get a Free Lead Follow-Up Audit",
 }: CtaBandProps) {
   return (
     <section className="bg-slate-800 py-16 md:py-20">
@@ -20,7 +18,7 @@ export default function CtaBand({
         {supportingText && (
           <p className="mt-4 text-slate-300 text-lg">{supportingText}</p>
         )}
-        <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <div className="mt-8 flex items-center justify-center">
           <a
             href="https://calendly.com/steffenhutchison/30min"
             target="_blank"
@@ -28,12 +26,6 @@ export default function CtaBand({
             className="bg-amber-600 hover:bg-amber-700 text-white font-semibold px-8 py-4 rounded-lg text-lg shadow-sm transition"
           >
             {primaryLabel}
-          </a>
-          <a
-            href="#free-audit"
-            className="border border-slate-500 hover:border-amber-400 text-slate-300 hover:text-amber-400 font-medium px-6 py-3.5 rounded-lg text-sm transition"
-          >
-            {secondaryLabel}
           </a>
         </div>
       </div>

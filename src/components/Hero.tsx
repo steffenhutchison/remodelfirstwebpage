@@ -14,7 +14,7 @@ export default function Hero() {
               seconds, follow up automatically, and turn more missed calls and
               quote requests into booked estimates.
             </p>
-            <div className="mt-6 flex flex-col sm:flex-row items-start sm:items-center gap-3">
+            <div className="mt-6 flex justify-center">
               <a
                 href="https://calendly.com/steffenhutchison/30min"
                 target="_blank"
@@ -23,12 +23,6 @@ export default function Hero() {
               >
                 Book a Demo
                 <ArrowRight className="w-5 h-5" />
-              </a>
-              <a
-                href="#free-audit"
-                className="border border-gray-300 hover:border-amber-600 hover:text-amber-700 text-gray-600 font-medium px-6 py-3.5 rounded-lg text-sm transition"
-              >
-                Get a Free Lead Follow-Up Audit
               </a>
             </div>
           </div>
