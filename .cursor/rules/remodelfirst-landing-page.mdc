@@ -1,0 +1,24 @@
+---
+description: RemodelFirst landing page rule
+alwaysApply: true
+---
+
+For this project, prioritize building a premium, conversion-focused landing page over building internal systems or orchestration layers.
+
+The goal is to create a clean one-page React + Tailwind website for RemodelFirst that helps home remodeling companies understand the offer quickly and book a demo.
+
+Priority order:
+1. Clear messaging
+2. Strong visual hierarchy
+3. Conversion-focused layout
+4. Mobile responsiveness
+5. Clean editable code
+
+Important behavior:
+- Do not over-engineer architecture
+- Do not create unnecessary scripts, directives, or execution layers
+- Do not default to system-building patterns unless explicitly requested
+- Treat this as a front-end design + copywriting + conversion problem
+- Keep the customer as the focus of the page
+- Keep the design premium, simple, and trustworthy
+- Keep code minimal and easy to edit
