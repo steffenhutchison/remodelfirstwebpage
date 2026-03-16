@@ -9,10 +9,10 @@ export default function Footer() {
             &copy; {year} RemodelFirst. All rights reserved.
           </p>
           <div className="flex items-center gap-6">
-            <a href="#" className="hover:text-white transition">
+            <a href="/privacy-policy" className="hover:text-white transition">
               Privacy Policy
             </a>
-            <a href="#" className="hover:text-white transition">
+            <a href="/terms-of-service" className="hover:text-white transition">
               Terms
             </a>
             <a href="mailto:steffenhutchison@gmail.com" className="hover:text-white transition">

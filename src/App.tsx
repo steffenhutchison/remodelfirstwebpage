@@ -8,6 +8,8 @@ import CtaBand from './components/CtaBand';
 import Faq from './components/Faq';
 import Footer from './components/Footer';
 import ContactPage from './pages/ContactPage';
+import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
+import TermsOfServicePage from './pages/TermsOfServicePage';
 
 function LandingPage() {
   return (
@@ -37,6 +39,12 @@ export default function App() {
 
   if (normalizedPath === '/contact') {
     return <ContactPage />;
+  }
+  if (normalizedPath === '/privacy-policy') {
+    return <PrivacyPolicyPage />;
+  }
+  if (normalizedPath === '/terms-of-service') {
+    return <TermsOfServicePage />;
   }
 
   return <LandingPage />;

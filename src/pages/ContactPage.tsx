@@ -202,16 +202,16 @@ export default function ContactPage() {
                     />
                     <span className="text-sm text-gray-700 leading-relaxed">
                       I consent to receive SMS messages from RemodelFirst about my inquiry. Message frequency varies. Message and
-                      data rates may apply. Reply STOP to opt out.
+                      data rates may apply. Reply STOP to opt out and HELP for help.
                     </span>
                   </label>
                   <p className="mt-3 text-xs text-gray-500">
                     By submitting this form, you acknowledge our{' '}
-                    <a href="#" className="text-amber-700 hover:text-amber-800 underline">
+                    <a href="/privacy-policy" className="text-amber-700 hover:text-amber-800 underline">
                       Privacy Policy
                     </a>{' '}
                     and{' '}
-                    <a href="#" className="text-amber-700 hover:text-amber-800 underline">
+                    <a href="/terms-of-service" className="text-amber-700 hover:text-amber-800 underline">
                       Terms of Service
                     </a>
                     .
