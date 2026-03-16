@@ -7,8 +7,9 @@ import Trust from './components/Trust';
 import CtaBand from './components/CtaBand';
 import Faq from './components/Faq';
 import Footer from './components/Footer';
+import ContactPage from './pages/ContactPage';
 
-export default function App() {
+function LandingPage() {
   return (
     <>
       <Navbar />
@@ -29,4 +30,14 @@ export default function App() {
       <Footer />
     </>
   );
+}
+
+export default function App() {
+  const normalizedPath = window.location.pathname.replace(/\/+$/, '') || '/';
+
+  if (normalizedPath === '/contact') {
+    return <ContactPage />;
+  }
+
+  return <LandingPage />;
 }
