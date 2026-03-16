@@ -192,15 +192,20 @@ export default function ContactPage() {
                 </div>
 
                 <div className="rounded-xl border border-gray-200 bg-gray-50 p-4">
+                  <p className="text-xs font-semibold uppercase tracking-wide text-[#1B2A4A]">Message Type Disclosure</p>
+                  <p className="mt-2 text-xs text-gray-600 leading-relaxed">
+                    If you opt in, message types may include inquiry follow-up, demo scheduling details, service-related updates,
+                    and support communication.
+                  </p>
                   <label htmlFor="smsConsent" className="flex items-start gap-3">
                     <input
                       id="smsConsent"
                       name="smsConsent"
                       type="checkbox"
                       value="agreed"
-                      className="mt-1 h-4 w-4 rounded border-gray-300 text-amber-600 focus:ring-amber-500"
+                      className="mt-4 h-4 w-4 rounded border-gray-300 text-amber-600 focus:ring-amber-500"
                     />
-                    <span className="text-sm text-gray-700 leading-relaxed">
+                    <span className="mt-3 text-sm text-gray-700 leading-relaxed">
                       I consent to receive SMS messages from RemodelFirst about my inquiry. Message frequency varies. Message and
                       data rates may apply. Reply STOP to opt out and HELP for help.
                     </span>
