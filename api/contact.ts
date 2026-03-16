@@ -97,9 +97,9 @@ export default async function handler(request: ApiRequest, response: ApiResponse
   const resendApiKey = getEnv('RESEND_API_KEY');
   const contactToEmail = getEnv('CONTACT_TO_EMAIL');
   const contactFromEmail = getEnv('CONTACT_FROM_EMAIL');
-  const contactReplyToEmail = getEnv('CONTACT_REPLY_TO_EMAIL') || contactToEmail;
+  const configuredReplyToEmail = getEnv('CONTACT_REPLY_TO_EMAIL');
 
-  if (!resendApiKey || !contactToEmail || !contactFromEmail || !contactReplyToEmail) {
+  if (!resendApiKey || !contactToEmail || !contactFromEmail) {
     response.status(500).json({ message: 'Contact service is not configured' });
     return;
   }
@@ -137,6 +137,8 @@ export default async function handler(request: ApiRequest, response: ApiResponse
   const sourcePath = payload.sourcePath || '/contact';
   const userAgent = normalizeText(request.headers['user-agent'], 500);
   const ip = getIp(request);
+  const fallbackReplyToEmail = configuredReplyToEmail || contactToEmail;
+  const replyToEmail = isValidEmail(payload.email) ? payload.email : fallbackReplyToEmail;
 
   const resend = new Resend(resendApiKey);
 
@@ -144,7 +146,7 @@ export default async function handler(request: ApiRequest, response: ApiResponse
     await resend.emails.send({
       from: contactFromEmail,
       to: contactToEmail,
-      replyTo: contactReplyToEmail,
+      replyTo: replyToEmail,
       subject: `New RemodelFirst contact request - ${payload.companyName}`,
       text: [
         'New contact request received.',
