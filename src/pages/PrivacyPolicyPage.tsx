@@ -54,9 +54,13 @@ export default function PrivacyPolicyPage() {
                   our lead follow-up system.
                 </p>
                 <p className="mt-3">
-                  Message frequency varies. Message and data rates may apply. You can reply STOP to opt out at any time and HELP
-                  for help.
+                  Message frequency varies. Message and data rates may apply. You can Text STOP to opt out at any time and Text
+                  HELP for help.
                 </p>
+                <p className="mt-3">
+                  Carrier participation is not guaranteed, and mobile carriers are not liable for delayed or undelivered messages.
+                </p>
+                <p className="mt-3">SMS consent and messaging is intended for users 18 years of age or older.</p>
                 <p className="mt-3 font-medium text-[#1B2A4A]">
                   SMS consent is not shared with third parties or affiliates for marketing purposes.
                 </p>
@@ -95,12 +99,26 @@ export default function PrivacyPolicyPage() {
               <section>
                 <h2 className="text-xl font-bold text-[#1B2A4A]">Contact Information</h2>
                 <p className="mt-3">For privacy questions or requests, contact:</p>
+                <p className="mt-2">
+                  For SMS support, Text HELP or email us at{' '}
+                  <a className="text-amber-700 hover:text-amber-800 underline" href="mailto:steffenhutchison@gmail.com">
+                    steffenhutchison@gmail.com
+                  </a>
+                  .
+                </p>
                 <p className="mt-2 font-medium text-[#1B2A4A]">Steffen Hutchison</p>
                 <p className="mt-1">
                   Email:{' '}
                   <a className="text-amber-700 hover:text-amber-800 underline" href="mailto:steffenhutchison@gmail.com">
                     steffenhutchison@gmail.com
                   </a>
+                </p>
+                <p className="mt-3">
+                  Related terms are available at{' '}
+                  <a className="text-amber-700 hover:text-amber-800 underline" href="/terms-of-service">
+                    Terms of Service
+                  </a>
+                  .
                 </p>
               </section>
             </div>

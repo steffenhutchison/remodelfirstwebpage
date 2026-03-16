@@ -50,8 +50,10 @@ export default function TermsOfServicePage() {
                 <ul className="mt-3 list-disc pl-6 space-y-2">
                   <li>Message frequency varies.</li>
                   <li>Message and data rates may apply.</li>
-                  <li>Reply STOP to opt out.</li>
-                  <li>Reply HELP for help.</li>
+                  <li>Text STOP to opt out.</li>
+                  <li>Text HELP for help.</li>
+                  <li>Carrier participation is not guaranteed, and carriers are not liable for delayed or undelivered messages.</li>
+                  <li>SMS consent and messaging is intended for users 18 years of age or older.</li>
                 </ul>
               </section>
 
@@ -87,12 +89,26 @@ export default function TermsOfServicePage() {
               <section>
                 <h2 className="text-xl font-bold text-[#1B2A4A]">Contact Information</h2>
                 <p className="mt-3">For questions about these terms, contact:</p>
+                <p className="mt-2">
+                  For SMS support, Text HELP or email us at{' '}
+                  <a className="text-amber-700 hover:text-amber-800 underline" href="mailto:steffenhutchison@gmail.com">
+                    steffenhutchison@gmail.com
+                  </a>
+                  .
+                </p>
                 <p className="mt-2 font-medium text-[#1B2A4A]">Steffen Hutchison</p>
                 <p className="mt-1">
                   Email:{' '}
                   <a className="text-amber-700 hover:text-amber-800 underline" href="mailto:steffenhutchison@gmail.com">
                     steffenhutchison@gmail.com
                   </a>
+                </p>
+                <p className="mt-3">
+                  Review our{' '}
+                  <a className="text-amber-700 hover:text-amber-800 underline" href="/privacy-policy">
+                    Privacy Policy
+                  </a>
+                  .
                 </p>
               </section>
             </div>
